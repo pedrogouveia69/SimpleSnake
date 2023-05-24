@@ -1,0 +1,16 @@
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\bin\Debug\net5.0\SimpleSnake.exe
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\bin\Debug\net5.0\SimpleSnake.deps.json
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\bin\Debug\net5.0\SimpleSnake.runtimeconfig.json
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\bin\Debug\net5.0\SimpleSnake.runtimeconfig.dev.json
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\bin\Debug\net5.0\SimpleSnake.dll
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\bin\Debug\net5.0\ref\SimpleSnake.dll
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\bin\Debug\net5.0\SimpleSnake.pdb
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\obj\Debug\net5.0\SimpleSnake.csproj.AssemblyReference.cache
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\obj\Debug\net5.0\SimpleSnake.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\obj\Debug\net5.0\SimpleSnake.AssemblyInfoInputs.cache
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\obj\Debug\net5.0\SimpleSnake.AssemblyInfo.cs
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\obj\Debug\net5.0\SimpleSnake.csproj.CoreCompileInputs.cache
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\obj\Debug\net5.0\SimpleSnake.dll
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\obj\Debug\net5.0\ref\SimpleSnake.dll
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\obj\Debug\net5.0\SimpleSnake.pdb
+C:\Users\Pedro.Gouveia\source\repos\SimpleSnake\obj\Debug\net5.0\SimpleSnake.genruntimeconfig.cache
