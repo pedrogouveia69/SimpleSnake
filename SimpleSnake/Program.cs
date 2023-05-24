@@ -6,7 +6,6 @@ namespace SimpleSnake
     {
         static void Main(string[] args)
         {
-            Apple.Spawn();
 
             while (!Game.IsOver)
             {

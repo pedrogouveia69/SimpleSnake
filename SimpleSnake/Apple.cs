@@ -1,13 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 
 namespace SimpleSnake
 {
     public static class Apple
     {
-        public static Point Coordinates { get ; private set; }
+        public static Point Coordinates { get; private set; }
 
+        static Apple()
+        {
+            Spawn();
+        }
         public static void Spawn()
         {
             var random = new Random();
