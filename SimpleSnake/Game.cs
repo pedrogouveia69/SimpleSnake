@@ -1,16 +1,31 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Drawing;
-using System.Threading;
 
 namespace SimpleSnake
 {
+    /// <summary>
+    /// Represents the game state and rendering logic.
+    /// </summary>
     public static class Game
     {
-        public const int BoardWidth = 36;
-        public const int BoardHeight = 15;
+        /// <summary>
+        /// The height of the game board.
+        /// </summary>
+        public const int BoardHeight = 16;
+
+        /// <summary>
+        /// The width of the game board, which is twice the height.
+        /// </summary>
+        public const int BoardWidth = BoardHeight * 2;
+
+        /// <summary>
+        /// Indicates whether the game is over or not.
+        /// </summary>
         public static bool IsOver { get; set; }
 
+        /// <summary>
+        /// Renders the game board on the console.
+        /// </summary>
         public static void Render()
         {
             Console.Clear();
@@ -21,15 +36,16 @@ namespace SimpleSnake
                 {
                     if (Apple.Coordinates.X == i && Apple.Coordinates.Y == j)
                     {
-                        Console.Write("A");
+                        Console.Write("A"); // Display the apple character at the apple coordinates.
                     }
                     else if (Snake.Body.Contains(new Point(i, j)))
                     {
-                        Console.Write("S");
+                        Console.Write("S"); // Display the snake character at the snake's body coordinates.
                     }
                     else if (i == 0 || i == BoardHeight || j == 0 || j == BoardWidth)
                     {
-                        // This part just makes the game's bounds prettier
+                        // Display the game board boundaries.
+                        // Alternate between displaying spaces and asterisks for aesthetic purposes.
                         if (j % 2 != 0)
                             Console.Write(' ');
                         else
@@ -37,31 +53,12 @@ namespace SimpleSnake
                     }
                     else
                     {
-                        Console.Write(' ');
+                        Console.Write(' '); // Display empty space for other positions on the game board.
                     }
                 }
                 Console.WriteLine();
             }
         }
-
-        public static void WaitForInput()
-        {
-            var stopwatch = Stopwatch.StartNew();
-            while (!Console.KeyAvailable && stopwatch.Elapsed < TimeSpan.FromMilliseconds(500))
-            {
-                Thread.Sleep(10); // Sleep for a short interval to avoid excessive CPU usage
-            }
-
-            if (Console.KeyAvailable)
-            {
-                var keyInfo = Console.ReadKey(true);
-                Snake.Move(keyInfo.Key);
-            }
-            else
-            {
-                Snake.Move(Snake.LastMove);
-            }
-        }
-
     }
+
 }
